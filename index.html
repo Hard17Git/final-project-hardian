@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Project Akhir - Hardian Maulana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
 </head>
 <body>
-    <h1>Final Project Hardian</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-hardian.png" alt="" class="logo Hardian">
+                <ul id="sidemenu">
+                    <!-- <li><a href="#header">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Interests</a></li>
+                    <li><a href="#contact">Award</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front - End Web Developer</p>
+                <h1>Hardian Maulana</h1>
+                <p><span>Hidup itu simple, kita yang membuatnya sulit.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------About Me----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/hardian-1.jpg" alt="Foto Hardian">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> <br>
+                    <p class="sub-content">
+                        Saya merupakan lulusan S-1 Teknik Informatika dari <strong>STMIK Dharma Negara Bandung</strong>,
+                        Saya memiliki minat dan ketertarikan di bidang Teknologi Informasi.
+                        Dengan kemauan yang sangat besar akan pengetahuan perkembangan teknologi,
+                        bertanggung jawab dengan semua pekerjaan saya, cepat dalam proses beradaptasi,
+                        mampu bekerja secara team dan individu serta percaya pada
+                        kerja keras namun tetap dengan cara pintar.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('biodata')">Biodata</p>
+                        <p class="tab-links" onclick="openTab('hobi')">Hobi</p>
+                        <p class="tab-links" onclick="openTab('visi-misi')">Visi Misi</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="biodata">
+                        <table>
+                            <tr>
+                                <th width="60%">Nama Lengkap</th>
+                                <td width="3%">:</td>
+                                <td>Hardian Maulana</td>
+                            </tr>
+                            <tr>
+                                <th>Nama Panggilan</th>
+                                <td>:</td>
+                                <td>Hardian</td>
+                            </tr>
+                            <tr>
+                                <th>Tempat & Tanggal Lahir</th>
+                                <td>:</td>
+                                <td>Kuningan, 17 Maret 1998</td>
+                            </tr>
+                            <tr>
+                                <th>Jenis Kelamin</th>
+                                <td>:</td>
+                                <td>Laki-laki</td>
+                            </tr>
+                            <tr>
+                                <th>Umur</th>
+                                <td>:</td>
+                                <td>25 Tahun</td>
+                            </tr>
+                            <tr>
+                                <th>Pendidikan Terakhir</th>
+                                <td>:</td>
+                                <td>S1 - Teknik Informatika</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-contents" id="hobi">
+                        <ul>
+                            <li><span>TRAVELING</span><br>Pantai, Gunung, Alam Sekitar, Hunting Photography, etc.</li>
+                            <li><span>OLAHRAGA</span><br>Lari, Main Game / PS, Sepak Bola, Bola Voli, etc.</li>
+                            <li><span>MENDENGARKAN MUSIK</span><br>Pop, Klasik, Dangdut, Jawa, Jazz, etc</li>
+                            <li><span>MEMBUAT DESAIN</span><br>UI/UX Design, Web Design, Poster, Spanduk, etc.</li>
+                            <li><span>MEMBUAT PROGRAM</span><br>Web Apps, Mobile Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="visi-misi">
+                        <ul>
+                            <li><span><h2>Visi</h2></span></li>
+                            <p class="text-justify">
+                                Bekerja di perusahaan multinasional dan memperoleh
+                                jabatan General Manajer, serta mempunyai perusahaan sendiri
+                                di masa yang akan datang yang bergerak dibidang Advertising,
+                                IT Solutions, Konveksi atau yang berhubungan dengan
+                                Teknologi Informasi.
+                            </p>
+                            <li><span><h2>Misi</h2></span></li>
+                            <ol>
+                                <li>Belajar tekun dan aktif saat bekerja ataupun dalam kegiatan seminar.</li>
+                                <li>Aktif di organisasi untuk belajar cara mengaplikasikan manajemen sekaligus mencari pertemanan baru.</li>
+                                <li>Mencari relasi dengan banyak orang supaya perusahaan semakin berkembang.</li>
+                                <li>Memprioritaskan kualitas guna meningkatkan penjualan.</li>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Experiences----------------- -->
+    <div id="experiences">
+        <div class="container">
+            <h1 class="sub-title">Experiences</h1>
+            <div class="experiences-list">
+                <div>
+                    <i class="fa fa-search"></i>
+                    <h2>RnD</h2>
+                    <p> Beberapa bulan kemudian ada perubahan divisi yaitu Divisi Project serta Divisi RnD 
+                        (Research and Development) dan sampai sekarang saya di RnD.
+                    </p>
+                    <a href="#"><i class="fa fa-link"></i> Selengkapnya...</more></a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p> Sebelumnya saya bekerja sebagai Web Developer masih diperusahaan yang sama, lalu dipindahkan
+                        kebagian App Design atau UI/UX Design.
+                    </p>
+                    <a href="#"><i class="fa fa-link"></i> Selengkapnya...</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p> Sekarang saya bekerja pada perusahaan yang bergerak dalam bidang Teknologi Informasi
+                        khususnya Call Center, sebagai Programmer.
+                    </p>
+                    <a href="#"><i class="fa fa-link"></i> Selengkapnya...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Education----------------- -->
+    <div id="education">
+        <div class="container">
+            <div class="row">
+                <div class="education-col-1">
+                    <h1 class="sub-title">Education</h1> <br><br>
+                    <div class="education-item">
+                        <h3>STMIK Dharma Negara Bandung <span>2020 - 2022</span></h3>
+                        <p>
+                            <ul>
+                                <li>Strata Satu (S1)</li>
+                                <li>Teknik Informatika</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Politeknik LP3I Cirebon <span>2018 - 2020</span></h3>
+                        <p>
+                            <ul>
+                                <li>Dilpoma Dua (D2) </li>
+                                <li>Informatika Komputer</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="education-item">
+                        <h3>SMK Karya Nasional Kuningan <span>2014 - 2017</span></h3>
+                        <p>
+                            <ul>
+                                <li>SMK/SMA</li>
+                                <li>Teknik Komputer dan Jaringan</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="education-col-2">
+                    <img src="images/hardian-2.jpg" alt="Foto Hardian">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Skills----------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skills">
+                    <img src="images/skills-1.png" alt="">
+                    <div class="layer">
+                        <h3>Programmer</h3>
+                        <p>
+                            HTML, CSS, PHP, MySQL, Bootstrap, Web Developer, Mobile Developer,
+                            UI/UX Design, Apps Design.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="skills">
+                    <img src="images/skills-2.png" alt="">
+                    <div class="layer">
+                        <h3>Graphic Design</h3>
+                        <p>
+                            Correl Draw, Photoshop, PixelLab, Kine Master, dan Software editing
+                            video lainnya.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="skills">
+                    <img src="images/skills-3.png" alt="">
+                    <div class="layer">
+                        <h3>Microsoft Office</h3>
+                        <p>
+                            Microsoft Word, Microsoft Excel, Microsoft Power Point, Microsoft Access
+                            Microsoft Visio, dan lainnya.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------contact----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> hardian.maulana1738@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 08156411130</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/hatthean.s.tycisampihthea/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://elyphsoft-center.com/hardian/hds-digital/"><i class="fa fa-globe"></i></a>
+                        <a href="https://instagram.com/hardianmln_/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/08156411130/"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                © <script>document.write(new Date().getFullYear())</script> Design by <i class="fas fa-heart"></i> <strong>Hardian Maulana</strong>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
