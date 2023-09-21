@@ -22,11 +22,18 @@ body{
     padding: 10px 10%;
 }
 nav{
-    margin-top: 15px;
+    width: 100%;
     display: flex;
+    background: #080808;
     align-items: center;
+    padding: 10px 0;
+    padding-left: 130px;
+    padding-right: 115px;
+    padding-top: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 100;
 }
 .logo{
     width: 140px;
@@ -70,7 +77,7 @@ nav ul li a:hover::after{
 
 /* ---------------------About Me------------------ */
 #about{
-    padding: 80px 0;
+    padding: 130px 0;
     color: #ababab;
 }
 .row{
@@ -138,6 +145,9 @@ nav ul li a:hover::after{
     line-height: 20px;
     text-indent: 0.5in;
 }
+.tab-contents ul ol{
+    padding-left: 17px;
+}
 .tab-contents table, th, td{
     border: 0px solid;
     text-align: left;
@@ -157,7 +167,7 @@ nav ul li a:hover::after{
 
 /* ---------------------Experiences------------------ */
 #experiences{
-    padding: 30px 0;
+    padding: 100px 0;
 }
 .experiences-list{
     display: grid;
@@ -209,7 +219,7 @@ nav ul li a:hover::after{
 
 /* ---------------------Education------------------ */
 #education{
-    padding: 30px 0;
+    padding: 130px 0;
 }
 .row{
     display: flex;
@@ -265,7 +275,7 @@ border: 2px solid #ff9500;
 
 /* ---------------------skills------------------ */
 #skills{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .skills-list{
     display: grid;
@@ -341,29 +351,136 @@ border: 2px solid #ff9500;
 }
 
 
+/* ---------------------Interests------------------ */
+#interests{
+    padding: 100px 0;
+}
+#interests .container .sub-title{
+    padding-bottom: 40px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.interests-col-1{
+    flex-basis: 55%;
+}
+.interests-col-2{
+    flex-basis: 40%;
+}
+.interests-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #ff9500;
+    position: relative;
+}
+.interests-item h3{
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff9500;
+    margin-bottom: 10px;
+}
+.interests-item h3 span{
+    color: #a2a2a2;
+}
+.interests-item ul {
+    padding-left: 20px;
+}
+.interests-item ul li {
+padding-bottom: 10px;
+}
+.interests-item::before {
+content: "";
+position: absolute;
+width: 16px;
+height: 16px;
+border-radius: 50px;
+left: -9px;
+top: 0;
+background: #ff9500;
+border: 2px solid #ff9500;
+}
+
+/* ---------------------Award------------------ */
+#award{
+    padding: 100px 0;
+}
+.award-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+.award-list div{
+    background-image: url(../images/award.png);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    text-align: center;
+}
+.award-list div i{
+    margin-top: 20px;
+    color: #ff9500;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.award-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.award-list div p{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+}
+.award-list div i{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.award-list div:hover{
+    background: #ff9500;
+    transform: translateY(-10px);
+}
+
+
 /* ---------------------contact------------------ */
 .contact-left{
     flex-basis: 35%;
 }
-
 .contact-right{
     flex-basis: 60%;
 }
-
 .contact-left p{
     margin-top: 30px;
 }
-
+.contact-left img{
+    height: 100px;
+    padding-bottom: 10px;
+}
 .contact-left p i{
     color: #ff9500;
     margin-right: 15px;
     font-size: 25px;
 }
-
 .social-icons{
     margin-top: 30px;
 }
-
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
@@ -372,21 +489,17 @@ border: 2px solid #ff9500;
     display: inline-block;
     transition: transform 0.5s;
 }
-
 .social-icons a:hover{
     color: #ff9500;
     transform: translateY(-5px);
 }
-
 .btn.btn2{
     display: inline-block;
     background: #ff9500;
 }
-
 .contact-right form{
     width: 100%;
 }
-
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -398,14 +511,12 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
-
 .copyright{
     width: 100%;
     text-align: center;
@@ -414,10 +525,31 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
-
 .copyright i{
     color: #ff9500;
 }
+
+
+/* ---------------------Scroll top button------------------ */
+.scroll-top{
+    position: fixed;
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.4s;
+}
+.scroll-top.active{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* ---------------------css for small screen------------------ */
 nav .fas{
